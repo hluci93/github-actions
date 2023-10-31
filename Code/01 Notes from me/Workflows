@@ -1,0 +1,25 @@
+YAML FILE
+
+Necesary:
+
+name: Workflow                   - Name
+on: workflow_dispatch etc        - Trigger
+jobs:                            - Starting of jobs 
+  "first-job":                   - Name of the job
+    runs-on: ubuntu-latest       - Identifier where the job should run on ( necesary )
+    steps:                       - Starting of the steps of the job
+      - name: Print greeting     - Defining the jobs Name and run( command to execute)
+        run: echo "Hello world"
+      - name: Print goodbye
+        run: echo "Done - bye"
+
+  
+If you need to run multiple shell commands (or multi-line commands, e.g., for readability), you can easily do so by adding the pipe symbol (|) as a value after the run: key.
+Like this:
+...
+run: |
+    echo "First output"
+    echo "Second output"
+
+
+    

@@ -1,0 +1,48 @@
+Key Elements:
+
+1. Workflows 
+2. Jobs
+3. Steps
+
+---------------------------------------------------------------------
+Code Repository:
+- Workflows 
+    - Job 1
+        - Steps 1
+        - Steps 2
+        - Steps N
+    - Job 2
+        - Steps 1
+        - Steps 2
+        - Steps N
+    - Job n
+        - Steps 1
+        - Steps 2
+        - Steps N
+
+
+Workflows - attached to github Repository
+          - contain one or more Jobs
+          - Triggered upon Events
+
+Jobs - Define a Runner ( execution environment )
+     - Github provide predefined Runners
+     - Contain one or more Steps
+     - Run in parallel (default) or sequential
+     - Can be conditional
+
+Staps - Execute a shell script or an Action
+      - Can use custom or third-party actions
+      - Steps are executed in order
+      - Can be conditional
+
+---------------------------------------------------------------------
+
+Events ( Workflow triggers )
+
+https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+
+---------------------------------------------------------------------
+
+Action - A (custom) application that performs a (typically complex) frequently repeated task
+
