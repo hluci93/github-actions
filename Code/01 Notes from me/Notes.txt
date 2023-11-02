@@ -46,3 +46,21 @@ https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 
 Action - A (custom) application that performs a (typically complex) frequently repeated task
 
+---------------------------------------------------------------------
+
+Jobs run by default in Parllel 
+    - If you need a job to wait or run after another you need to add the following in the job:
+        needs: "name of the job to wait for"
+        or
+        needs: ["multiple","jobs"]
+
+---------------------------------------------------------------------
+If you want workflow to run on multiple events add the events in brackets:
+    on: [push, workflow_dispatch, etc]
+
+---------------------------------------------------------------------
+Github Actions contexts:
+https://docs.github.com/en/actions/learn-github-actions/contexts
+
+
+
